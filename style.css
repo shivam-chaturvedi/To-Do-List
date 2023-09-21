@@ -1,0 +1,218 @@
+body{
+    background-color: rgb(236, 229, 222);
+}
+.header{
+    display: flex;
+    text-align:center;
+    border: 1px dotted;
+    background-color: rgb(159, 221, 179);
+    box-sizing: border-box;
+    align-items: center;
+    justify-content:center;
+    color: rgb(11, 129, 89);
+    margin: 1%;
+    border-radius: 5px;
+    height: 10vh;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.61);
+
+}
+.list{
+    border: 2px dashed darkcyan;
+    height: 75vh;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow-y: auto;
+    background-color: rgb(86, 194, 124);
+    z-index: 1px;
+}
+.list::-webkit-scrollbar{
+    width: 1px;
+    height: 1px;
+}
+
+#addTaskButton{
+    background-color: rgba(3, 158, 80, 0.687);
+    display: inline-block;
+    padding: 1%;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 0px;
+    width: 20%;
+    margin-left: 78%;
+    margin-bottom: 0.5%;
+    
+}
+#addTaskButton:hover{
+    /* transform: scale(1.1); */
+    box-shadow: 0px 0px 5px black;
+}
+
+
+
+
+
+.task {
+  width: 98%;
+  height: fit-content;
+    border: 2px double;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px;
+    background-color: aquamarine;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.562);
+    border-radius: 10px;
+    margin-top: 1%;
+  }
+  .inside-task {
+    font-size: 130%;
+    font-weight: 600;
+    display: flex;
+    padding: 2px;
+    /* border: 1px solid; */
+    color: rgba(17, 90, 90, 0.945);
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 40%;
+  }
+  p{
+    margin: 0px;
+    padding: 0px;
+  }
+  #date{
+    font-size: 12px;
+    margin-bottom: 5px;
+    color: rgba(5, 129, 154, 0.945);
+
+  }
+  .task button{
+    width: fit-content;
+    margin-right: 3%;
+    height: fit-content;
+    padding: 0.5%;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 110%;
+    font-style: oblique;
+    color: antiquewhite;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(236, 10, 10, 0.993);
+  }
+  .task button:hover{
+    transform: scale(1.1);
+    color: antiquewhite;
+    background-color: rgba(252, 46, 5, 0.874);
+  }
+  .deadline{
+    /* border: 1px solid; */
+    padding: 0px;
+    font-weight: 600;
+    display: flex;
+    padding: 3px;
+    justify-content: start;
+    align-items: start;
+    font-size: 10px;
+    flex-direction: column;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 100%;
+    width: 30%;
+  }
+  .deadline p{
+    font-size: 160%;
+    margin-bottom: 5px;
+    color: rgba(17, 90, 90, 0.945);
+  }
+  #time-left{
+    font-size: 150%;
+    color: rgba(5, 129, 154, 0.945);
+  }
+
+
+
+
+  .add-task-form{
+    border: 3px solid rgb(215, 219, 222);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px black;
+    text-align: start;
+    width: 50%;
+    position: absolute;
+    top:20%;
+    right: 25%;
+    flex-direction: column;
+    padding: 2%;
+    background-color: rgb(110, 197, 171);
+    display: none;
+}
+.add-cancel-buttons{
+  position: relative;
+  left: 42%;
+  display:flex;
+  margin-top: 2%;
+  width: 60%;
+  padding: 2%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.add-task-form h1{
+    margin: 0px;
+    color: rgb(8, 99, 99);
+    font-size: 2.5em;
+}
+#task-input{
+    width: 90%;
+    margin-top: 3%;
+    padding: 2%;
+}
+.add-task-form input{
+    font-size: 1.1em;
+}
+
+.add-task-form #error-msg{
+  color: rgb(147, 2, 2);
+  font-size: 20px;
+}
+
+.add-task-form button{
+    width: 80%;
+    margin-right: 15%;
+    padding: 3%;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 4px;
+    
+}
+.add-task-form button:hover{
+    transform: scale(1.03);
+    background-color: rgb(8, 99, 99);
+    color: antiquewhite;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.58);
+}
+.last-date-container{
+    display: flex;
+    border: 1px solid;
+    margin-top: 1%;
+    padding: 2%;
+    width: 90%;
+    font-size: 1.2em;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+#last-date{
+    background-color:rgba(224, 113, 113, 0.301);
+    width: 10%;
+    cursor: pointer;
+}
+#last-date::-webkit-datetime-edit{
+display: none;
+}
+#last-date-label{
+    cursor: pointer;
+}
